@@ -1,38 +1,185 @@
-.App {
+:root{
+  --blue-color: #2A2F6D; 
+  --yellow-color: #FFD600;
+  --yellow-hover:#ECC600; 
+  --blue-hover: #40479B; 
+}
+
+.navitem{
+margin:0 20px 0 150px;
+font-weight: bolder;
+font-size: 18px ;
+}
+.signbutton{
+  margin:20px;
+  width:100px;
+  border:none; 
+}
+.signup{
+  background-color:var(--yellow-color);
+}
+.login{
+  background-color:var(--blue-color);
+}
+.signup:hover{
+  background-color:var(--yellow-hover);
+}
+.login:hover{
+  background-color:var(--blue-hover);
+}
+.footerlogo{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width:200px;
+
+}
+.footer{
+  padding:30px 50px 10px 50px;
+  background-color: var(--blue-color);
+  width: 100%;
+}
+.footer_nav{
+text-align: center;
+
+  color:white;
+  font-weight: bolder;
+font-size: 18px ;
+}
+.footer_row{
+  margin:10px 0 10px 0;
+ 
+}
+.socialmedia > img{
+ width:70px;
+ margin:0 18px 0 18px;
+}
+.welcom{
+ padding: 150px 70px 100px 70px;
+ background-image: url('./assets/imgs/welcom_b.png');
+ background-size: cover;
+ background-repeat: none;
+ height: 670px;
+ width: 100%;
+}
+.welcome_title{
+  margin: 0 0 40px 0;
+  width: 60%;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.welcome_text{
+ margin:10px 0 40px 0;
+ font-size: 25px;
+}
+.explore_btn{
+  border: none;
+  width:200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.yellow_line{
+  width: 100px;
+  height: 5px;
+  border-radius: 50px;
+  margin-left:auto;
+  margin-right: auto;
+  background-color: var(--yellow-color);
+}
+.how_it_works{
+
+}
+.works_title{
   text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.asking_path{
+  margin: 90px 0px 50px 0px;
+  background-image: url("./assets/imgs/path_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 373px;
+}
+.PathCard{
+  background-color: white;
+  border-style:solid;
+  border-width: 2px;
+  width:250px;
+  height: 260px;
+  margin:0 100px 0 100px;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.CardTitle{
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+
+}
+.CardText{
+  font-size: 15px;
+}
+.down{
+  padding-top: 50px;
+}
+.ask_ur_ques{
+  padding:0 300px 0 300px;
+  font-size: 30x; 
+  margin: 20px 0 50px 0;
+  
+}
+.ask_ur_ques > Button{
+  background-color: var(--blue-color);
+  width:358px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+.Motivation{
+  background-image: url("./assets/imgs/motivation.png");
+  background-size: cover;
+  padding:100px 0px 100px 0px ; 
+
+}
+.Motivation > .box {
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  width: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+  padding:10px 30px 50px 30px;
+  font-size: 28px;
+
+}
+.Motivation > .box > .title{
+  margin:20px 0 20px 0;
+  font-size: 40px;
+}
+.Motivation > .box > .content{
+  text-align: left;
+  color: var(--blue-color);
+  font-weight: bold;
+}
+.Motivation > .box > .content >b {
+  color:var(--yellow-color);
+}
+.Motivation > .box > Button{
+  background-color: var(--blue-color);
+  margin: 20px 0 0px 0;
+  width:200px;
+  height: 50px; 
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.Motivation > .box > Button:hover{
+  background-color: var(--blue-hover);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
