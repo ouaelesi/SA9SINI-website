@@ -1,18 +1,36 @@
 import react, { Component} from "react"
-import Header from './HeaderComponent'
-import Footer from './FooterComponent'
-import Welcome from './WelcomeComponent'
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import Home from "./HomeComponent"
+import AboutUs from "./AboutComponent"
+import Header from "./HeaderComponent"
+import Footer from "./FooterComponent"
 
 class Main extends Component{
   render(){
-      return(
-          <div>
-              <Header/>
-              <Welcome/>
-              <Footer/>
-          </div> 
-      );
+    const homepage = () => {
+        return(
+            <Home/>
+        );
+    }
+    const aboutuspage = () => {
+        return(
+            <AboutUs/>
+        );
+
+    }
+
+    return(
+      <>  
+        <Header/>
+        <Switch>
+            <Route path='/home' component={homepage} /> 
+            <Route path="/aboutus" component={aboutuspage}/>
+            <Redirect to="/home" />
+        </Switch>
+        <Footer/>
+      </>
+    ); 
+  
   }
 }
-
-export default Main;
+export default withRouter(Main); 

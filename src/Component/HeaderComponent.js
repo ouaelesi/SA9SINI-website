@@ -1,14 +1,7 @@
 import react, { Component, useState } from "react"
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    Button
-  } from 'reactstrap';
+//import { NavLink } from 'react-router-dom';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, Button, Modal, ModalHeader, ModalBody,
+  Form, FormGroup, Input, Label, NavLink  } from 'reactstrap';
 
   const  Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,16 +16,16 @@ import {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem className="navitem">
-                <NavLink href="/components/">HOME</NavLink>
+                <NavLink >HOME</NavLink>
               </NavItem>
               <NavItem className="navitem">
-                <NavLink href="https://github.com/reactstrap/reactstrap">QUESTIONS</NavLink>
+                <NavLink>QUESTIONS</NavLink>
               </NavItem>
               <NavItem className="navitem">
-                  <NavLink href="https://github.com/reactstrap/reactstrap">ABOUT</NavLink>
+                  <NavLink >ABOUT</NavLink>
               </NavItem >
               <NavItem className="navitem">
-                  <NavLink href="https://github.com/reactstrap/reactstrap">CONTACT</NavLink>
+                  <NavLink>CONTACT</NavLink>
               </NavItem>
             </Nav>
           <Button className="signbutton login">LOG IN</Button>

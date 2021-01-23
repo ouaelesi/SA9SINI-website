@@ -87,9 +87,9 @@ font-size: 18px ;
   margin-right: auto;
   background-color: var(--yellow-color);
 }
-.how_it_works{
+/* .how_it_works{
 
-}
+} */
 .works_title{
   text-align: center;
   font-size: 40px;
@@ -179,6 +179,12 @@ font-size: 18px ;
 }
 .Motivation > .box > Button:hover{
   background-color: var(--blue-hover);
+}
+.whoarewe{
+  padding: 150px 70px 100px 70px;
+  background-image: url('./assets/imgs/welcom_b.png');
+  background-size: cover;
+  background-repeat: none;
 }
 
 
