@@ -11,18 +11,18 @@ import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, 
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/"><img src='/assets/imgs/logo.png'  width="150"/></NavbarBrand>
+          <NavbarBrand href="/home"><img src='/assets/imgs/logo.png'  width="150"/></NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem className="navitem">
-                <NavLink >HOME</NavLink>
+                <NavLink  >HOME</NavLink>
               </NavItem>
               <NavItem className="navitem">
                 <NavLink>QUESTIONS</NavLink>
               </NavItem>
               <NavItem className="navitem">
-                  <NavLink >ABOUT</NavLink>
+                  <NavLink href="/aboutus" >ABOUT</NavLink>
               </NavItem >
               <NavItem className="navitem">
                   <NavLink>CONTACT</NavLink>

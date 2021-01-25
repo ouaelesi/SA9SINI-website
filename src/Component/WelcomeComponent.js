@@ -1,6 +1,6 @@
 import react,{Component} from 'react'
 import {Button} from 'reactstrap'
-import PathCard from './PathComponent'
+import PathCard from './CardComponent'
 import Motivation from './MotivationComponent'
 
 class Welcome extends Component{

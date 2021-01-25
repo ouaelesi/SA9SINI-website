@@ -8,8 +8,8 @@ class PathCard extends Component{
     render(){
         return(
             <div className="PathCard">
-              <div className="CardIcon">
-                  <img src={this.props.icon}></img>
+              <div className="CardIcon mb-4">
+                  <img src={this.props.icon} width="35%"></img>
               </div>
               <div className="CardTitle">
                   {this.props.Title}
