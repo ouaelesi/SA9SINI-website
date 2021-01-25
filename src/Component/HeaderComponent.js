@@ -14,17 +14,17 @@ import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, 
           <NavbarBrand href="/home"><img src='/assets/imgs/logo.png'  width="150"/></NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
-              <NavItem className="navitem">
-                <NavLink  >HOME</NavLink>
+            <Nav className="mr-auto row nav" navbar>
+              <NavItem className="navitem col-3">
+                <NavLink href="./home">HOME</NavLink>
               </NavItem>
-              <NavItem className="navitem">
-                <NavLink>QUESTIONS</NavLink>
+              <NavItem className="navitem col-3">
+                <NavLink href="/Questions">QUESTIONS</NavLink>
               </NavItem>
-              <NavItem className="navitem">
+              <NavItem className="navitem col-3">
                   <NavLink href="/aboutus" >ABOUT</NavLink>
               </NavItem >
-              <NavItem className="navitem">
+              <NavItem className="navitem col-3">
                   <NavLink>CONTACT</NavLink>
               </NavItem>
             </Nav>

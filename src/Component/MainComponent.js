@@ -4,6 +4,7 @@ import Home from "./HomeComponent"
 import AboutUs from "./AboutComponent"
 import Header from "./HeaderComponent"
 import Footer from "./FooterComponent"
+import Questions from "./QuestionsComponent"
 
 class Main extends Component{
   render(){
@@ -18,6 +19,11 @@ class Main extends Component{
         );
 
     }
+    const Question = () => {
+      return(
+        <Questions/>
+      );
+    }
 
     return(
       <>  
@@ -25,6 +31,7 @@ class Main extends Component{
         <Switch>
             <Route path='/home' component={homepage} /> 
             <Route path="/aboutus" component={aboutuspage}/>
+            <Route path="/Questions" component={Question}/>
             <Redirect to="/home" />
         </Switch>
         <Footer/>
