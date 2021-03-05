@@ -203,5 +203,102 @@ font-size: 18px ;
   background-size: 100% 100%;
   height: 630px;
 }
+.stat{
+padding : 0 20px 0 20px ; 
+background-color: #E4E4E4;
+border-radius: 10px;
+height: 50px;
+align-items: center;
+}
+.info_row > div:nth-child(1) > button ,.info_row > div:nth-child(2) > button{
+  margin-top: 5px;
+  background-color: white;
+  color: grey;
+  border-radius: 10px;
+  display: flex;
+}
+.btn_answer {
+  margin-top: 5px;
+  background-color:var(--yellow-color);
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold; 
+}
+
+.Question_info > img{
+  width:80px ; 
+}
+.question_section{
+  padding-left: 80px;
+}
+.question{
+  font-size: 25px;
+  font-weight: bold;
+}
+.question_details,.Question_info{
+  font-size: 18px;
+  color: gray;
+}
+.categories{
+
+  padding: 0 0px 0 100px;
+}
+.fields > button {
+  background-color: transparent;
+ height : 50px ; 
+ font-weight: bold;
+ color: grey;
+}
+.fields{
+  width: 90%;
+  margin: 20px auto;
+}
+.search-form{
+  width: 70%;
+margin: 0px auto;
+}
+.ask_btn{
+  width: 80%;
+  background-color: var(--blue-color);
+  color: white ; 
+  font-weight: bold;
+}
+.ask_btn:hover{
+  background-color: var(--blue-hover);
+  color: white;
+}
+.ask_text{
+  font-size: 25px;
+}
+.pagination > button {
+  background-color: transparent;
+  color: grey;
+  border:1px solid;
+}
+.pagination{
+  margin: 0px auto;
+  width: 200px;
+
+}
+.pagination > .Next {
+  width: 120px;
+  margin-left: 30px;
+}
+.Question_container{
+  background-color: #E4E4E4;
+  position:relative;
+  width: 100%;
+}
+.Question_container > .container{
+  background-color: white;
+  padding-top: ;
+  
+}
+.nav_container{
+  background-color:white;
+  box-shadow:grey 0px 0px 5px 0px ;
+}
+
+
 
 

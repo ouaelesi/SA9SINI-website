@@ -10,7 +10,7 @@ import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, 
   
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar className="nav_container" light expand="md">
           <NavbarBrand href="/home"><img src='/assets/imgs/logo.png'  width="150"/></NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
