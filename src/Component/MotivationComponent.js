@@ -19,7 +19,8 @@ and painful  you will have to sacrifice a lot for this dream but there is a secr
 you should know " it will be worth it so much "..and we create this website 
 <b> SA9SINI</b> as a support for you in your studies.
                </div>
-               <Button>Get Motivated</Button>  
+               {/* <Button>Get Motivated</Button>  */}
+               <button>Get Motivated</button>   
                  </div>
             </div>
         );

@@ -28,8 +28,9 @@ import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, 
                   <NavLink>CONTACT</NavLink>
               </NavItem>
             </Nav>
-          <Button className="signbutton login">LOG IN</Button>
-          <Button className="signbutton signup">SIGN UP</Button>
+            <NavLink href="/login">  <Button className="signbutton login">LOG IN</Button></NavLink>
+            <NavLink href="/login">  <Button className="signbutton signup">SIGN UP</Button></NavLink>
+         
           </Collapse>
         
         </Navbar>

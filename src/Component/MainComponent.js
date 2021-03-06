@@ -5,6 +5,8 @@ import AboutUs from "./AboutComponent"
 import Header from "./HeaderComponent"
 import Footer from "./FooterComponent"
 import Questions from "./QuestionsComponent"
+import LoginForm from "./LogInComponent";
+import Footer_ from "./Footer_Component"
 
 class Main extends Component{
   render(){
@@ -23,6 +25,12 @@ class Main extends Component{
       return(
         <Questions/>
       );
+  
+    }
+    const Login = () => {
+      return(
+        <LoginForm/>
+      ); 
     }
 
     return(
@@ -32,9 +40,10 @@ class Main extends Component{
             <Route path='/home' component={homepage} /> 
             <Route path="/aboutus" component={aboutuspage}/>
             <Route path="/Questions" component={Question}/>
+            <Route path="/login" component={Login}/>
             <Redirect to="/home" />
         </Switch>
-        <Footer/>
+        <Footer_/>
       </>
     ); 
   
