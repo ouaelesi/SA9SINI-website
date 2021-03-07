@@ -5,7 +5,8 @@ import AboutUs from "./AboutComponent"
 import Header from "./HeaderComponent"
 import Footer from "./FooterComponent"
 import Questions from "./QuestionsComponent"
-import LoginForm from "./LogInComponent";
+import LoginForm from "./LogInComponent"
+import AskQuestions from "./AskQuestionComponent"
 import Footer_ from "./Footer_Component"
 
 class Main extends Component{
@@ -33,6 +34,12 @@ class Main extends Component{
       ); 
     }
 
+    const AskQuestion = () => {
+      return(
+        <AskQuestions/>
+      ); 
+    }
+
     return(
       <>  
         <Header/>
@@ -41,9 +48,10 @@ class Main extends Component{
             <Route path="/aboutus" component={aboutuspage}/>
             <Route path="/Questions" component={Question}/>
             <Route path="/login" component={Login}/>
+            <Route path="/AskQuestion" component={AskQuestion}/>
             <Redirect to="/home" />
         </Switch>
-        <Footer_/>
+        <Footer/>
       </>
     ); 
   

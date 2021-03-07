@@ -7,12 +7,13 @@ class LoginForm extends Component{
             <>
             <div className="page_container">
             <div className="login_container">
-                  <div className="login_with_google">
-                   Login with Google
-                  </div>
-                  <div className="login_with_facebook">
-                  Login with Facebook
-                  </div>
+                  <button className=" btn login_with_google">
+                   <img src="/assets/imgs/google_logo.png"></img> Login with Google
+                  </button>
+                  
+                  <button className=" btn login_with_facebook">
+                    <img src="/assets/imgs/fb_logo.png" width="10px"></img>  Login with Facebook
+                  </button>
                   <div className="login_form">
                   <div className="form-group">
                   User Name 

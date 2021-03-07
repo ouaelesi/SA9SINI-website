@@ -10,7 +10,7 @@ class QuestionsMenu extends Component{
           <Row >
               <div className="col-4 font-weight-bold ask_text" >All Questions</div>
               <div className="col-4"></div>
-              <div className="col-4" > <button className="btn btn-light ask_btn">Ask Your Question</button> </div>
+              <div className="col-4" > <a href="/AskQuestion"><button className="btn btn-light ask_btn">Ask Your Question</button></a>  </div>
           </Row>
          <div class="btn-group fields" role="group" aria-label="Basic example">
  <button type="button" class="btn btn-secondary">RECENT QUESTIONS</button>
