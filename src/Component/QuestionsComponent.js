@@ -74,21 +74,10 @@ class Questions extends Component{
     },
       ]; 
 
-      function render_questions(Quesions){
-        Question.forEach( elem => {
-          <QuestionBox Time={elem.Time} 
-                     user_photo={elem.user_photo}
-                      More_details={elem.More_details} 
-                      Question={elem.Question}
-                      number_of_answers={elem.number_of_answers}
-                      number_of_views={elem.number_of_views}/>
-        })
-      }
-
       return(
         <>
         <div className="Question_container">
-        <div className="container">
+        <div className="Questions_section">
         <QuestionsMenu></QuestionsMenu>
         {Question.map ((elem,key) => (
         <QuestionBox Time={elem.Time} 

@@ -16,15 +16,14 @@ class QuestionBox extends Component{
                <div className="question_section">
                 <p className="question">{this.props.Question}</p>
                 <p className="question_details">{this.props.More_details}</p>
-                <div className="stat">
-                <Row className="info_row ">
-                    <div className="col-3">
-                        <button className="btn">{this.props.number_of_answers} Answers</button>
+                <div className="stat ">
+                <Row className="info_row d-flex align-items-center ">
+                    <div className="col-4 col-sm-3">
+                        <button className="btn Question_Statistics">{this.props.number_of_answers} Answers</button>
                         </div>  
-                    <div className="col-3">
-                    <button className="btn"><i className="fa fa-comment-alt"></i>{this.props.number_of_views} views </button> </div>  
-                    <div className="col-3"></div>  
-                    <div className="col-3"><button className="btn btn_answer">Answer</button></div>  
+                    <div className="col-4 col-sm-3">
+                    <button className="btn Question_Statistics">{this.props.number_of_views} views </button> </div>  
+                    <div className="col-4 col-sm-3 ml-auto"><button className="btn btn_answer">Answer</button></div>  
                  </Row>  
                 </div>
                

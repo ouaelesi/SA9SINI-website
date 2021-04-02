@@ -10,7 +10,7 @@ class AskingSteps extends Component {
 
 <div className="QuestionSteps">
                 <div className="">
-                    <img src={QuesIcon} className="quesstepicon" ></img>
+                    <img src={QuesIcon} className="quesstepicon" np></img>
                 </div>
                 <div className="ques_step_txt">
                 <p className="text-center font-weight-bold card_steps">How to draft your question</p>

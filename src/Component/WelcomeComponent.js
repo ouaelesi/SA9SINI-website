@@ -26,7 +26,7 @@ class Welcome extends Component{
         return(
             <div>
                 <div className="welcom row" >
-                 <div className="col-6">
+                 <div className="col-12 col-md-6">
                      <div className="welcome_title">WELCOME WITH US 
                      <div className="yellow_line"></div>
                      </div>
@@ -43,9 +43,9 @@ class Welcome extends Component{
                     <div className="works_title">HOW IT WORKS
                     <div className="yellow_line"></div>
                     <div className="asking_path row">
-                    <div className="col-4 down"> <PathCard Title = {tab[0].title} icon = {tab[0].icon} Text = {tab[0].text}></PathCard></div>
-                    <div className="col-4"> <PathCard Title = {tab[1].title} icon = {tab[1].icon} Text = {tab[1].text}></PathCard></div>
-                    <div className="col-4 down"> <PathCard Title = {tab[2].title} icon = {tab[2].icon} Text = {tab[2].text}></PathCard>
+                    <div className="col-11 col-md-4 down"> <PathCard Title = {tab[0].title} icon = {tab[0].icon} Text = {tab[0].text}></PathCard></div>
+                    <div className="col-11 col-md-4"> <PathCard Title = {tab[1].title} icon = {tab[1].icon} Text = {tab[1].text}></PathCard></div>
+                    <div className="col-11 col-md-4 down"> <PathCard Title = {tab[2].title} icon = {tab[2].icon} Text = {tab[2].text}></PathCard>
 </div>
                    
                     </div>

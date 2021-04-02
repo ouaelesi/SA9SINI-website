@@ -5,9 +5,9 @@ import AboutUs from "./AboutComponent"
 import Header from "./HeaderComponent"
 import Footer from "./FooterComponent"
 import Questions from "./QuestionsComponent"
-import LoginForm from "./LogInComponent"
+import Log_SigninPage from "./Log_SigninPage"
 import AskQuestions from "./AskQuestionComponent"
-import Footer_ from "./Footer_Component"
+import LoginComponent from "./Login_Component";
 
 class Main extends Component{
   render(){
@@ -28,9 +28,9 @@ class Main extends Component{
       );
   
     }
-    const Login = () => {
+    const Signin = () => {
       return(
-        <LoginForm/>
+        <Log_SigninPage/>
       ); 
     }
 
@@ -39,7 +39,10 @@ class Main extends Component{
         <AskQuestions/>
       ); 
     }
-
+    const Login = () => {
+      return( <LoginComponent/>) ; 
+     
+    }
     return(
       <>  
         <Header/>
@@ -47,8 +50,9 @@ class Main extends Component{
             <Route path='/home' component={homepage} /> 
             <Route path="/aboutus" component={aboutuspage}/>
             <Route path="/Questions" component={Question}/>
-            <Route path="/login" component={Login}/>
+            <Route path="/Signin" component={Signin}/>
             <Route path="/AskQuestion" component={AskQuestion}/>
+            <Route path="/Login" component={Login}/>
             <Redirect to="/home" />
         </Switch>
         <Footer/>

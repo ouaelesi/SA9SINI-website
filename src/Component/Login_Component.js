@@ -1,11 +1,11 @@
 import react , {Component} from 'react'
 
 
-class LoginForm extends Component{
+class LoginComponent extends Component{
     render(){
         return(
-            <>
-            <div className="login_container">
+            <div className="page_container row d-flex justify-content-center">
+            <div className="login_container col-10 col-xl-3 col-lg-4 col-md-5 col-sm-8">
                   <button className=" btn login_with_google">
                    <img src="/assets/imgs/google_logo.png"></img> Login with Google
                   </button>
@@ -14,23 +14,21 @@ class LoginForm extends Component{
                     <img src="/assets/imgs/fb_logo.png" width="8px"></img>  Login with Facebook
                   </button>
                   <div className="login_form">
-                  <div className="form-group Loginstitles" id="usernamelogin">
-                  User Name 
-                  <input className="form-control Loginstitles" placeholder=".."></input>   
+                  <div className="form-group Loginstitles" id="usernamelogin"> 
                   Email
-                  <input className="form-control Loginstitles" placeholder=".."></input> 
+                  <input className="form-control Loginstitles mb-4" placeholder=".."></input> 
                   Password
-                  <input className="form-control" placeholder=".."></input>  
-                  <button className="btn singinbtn">SIGN IN</button>
+                  <input className="form-control mb-4" placeholder=".."></input>  
+                  <button className="btn loginbtn">LOG IN</button>
                   </div> 
                   </div>
               </div>
 
 
              
-            </>
-        );
+            </div>
+        ); 
     }
 }
 
-export default LoginForm ; 
+export default LoginComponent ; 
